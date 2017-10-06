@@ -89,6 +89,7 @@ header {
 	    background: url(/app/images/information-button.svg);
 	    background-size: 20px;
 	    background-repeat: no-repeat;
+	    cursor: pointer;
 	}
 
 /* Page Content */

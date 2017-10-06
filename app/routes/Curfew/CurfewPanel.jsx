@@ -9,6 +9,8 @@ class CurfewPanel extends Component {
   constructor(props) {
     super(props);
 
+    this.saveCurfewSetting = this.saveCurfewSetting.bind(this);
+
     this.initValues = [{"day":"Monday","startHour":"8","startMinute": "00", "startPeriod":"pm", "endHour":"6","endMinute": "00", "endPeriod":"am"},
                        {"day":"Tuesday","startHour":"8","startMinute": "00", "startPeriod":"pm", "endHour":"6","endMinute": "00", "endPeriod":"am"},
                        {"day":"Wednesday","startHour":"8","startMinute": "00", "startPeriod":"pm", "endHour":"6","endMinute": "00", "endPeriod":"am"},
@@ -18,6 +20,11 @@ class CurfewPanel extends Component {
                        {"day":"Sunday","startHour":"8","startMinute": "00", "startPeriod":"pm", "endHour":"6","endMinute": "00", "endPeriod":"am"}];
 
     
+  }
+
+  saveCurfewSetting(e) {
+    e.preventDefault();
+    this.props.history.push('/reviewCurfew');
   }
 
   render() {
@@ -44,7 +51,7 @@ class CurfewPanel extends Component {
             </div>
             <div className="btn__group">
               <div className="btn btn-secondary col-2">Cancel</div>
-              <div className="btn btn-primary col-2">Save</div>
+              <div className="btn btn-primary col-2" onClick={this.saveCurfewSetting}>Save</div>
             </div>
           </div>
         </div>

@@ -32,7 +32,7 @@
 	                align-items: center;
 	        -webkit-transition: all .3s ease-in-out;
 	        transition: all .3s ease-in-out;
-	        align-items: center;
+	        cursor: pointer;
 	    }
 
 	    .blade__icon {
@@ -46,6 +46,11 @@
                 -ms-flex: 0 0 50px;
                     flex: 0 0 50px;
 	    }
+
+        .blade__icon--small {
+            width: 30px;
+            height: 30px;
+        }
 
 	    .blade__sub-heading {
 			display: block;

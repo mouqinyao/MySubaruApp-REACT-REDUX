@@ -10,6 +10,7 @@ import DriverAlertLanding from '~/routes/Landing/DriverAlertLanding';
 import MessageLanding from '~/routes/Landing/MessageLanding';
 
 import CurfewPanel from '~/routes/Curfew/CurfewPanel';
+import CurfewReview from '~/routes/Curfew/CurfewReview';
 
 import PinPanel from '~/routes/Panel/PinPanel';
 
@@ -22,6 +23,7 @@ const App = () => (
       <Route path="/driverAlertLanding" component={DriverAlertLanding}/>
       <Route path="/messageLanding" component={MessageLanding}/>
       <Route path="/createCurfew" component={CurfewPanel}/>
+      <Route path="/reviewCurfew" component={CurfewReview}/>
       <Route path="/authorize" component={PinPanel}/>     
     </div>
   </Router>
