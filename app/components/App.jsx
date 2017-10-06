@@ -9,7 +9,7 @@ import CurfewPanel from '~/routes/Curfew/CurfewPanel';
 const App = () => ( 
   <Router>
     <div>
-      <Route path="/home" component={Home}/>
+      <Route path="/" exact component={Home}/>
       <Route path="/curfews" component={CurfewPanel}/>
     </div>
   </Router>
