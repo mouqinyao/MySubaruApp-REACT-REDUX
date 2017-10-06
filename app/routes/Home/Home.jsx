@@ -11,7 +11,7 @@ class Home extends Component {
 
 	handleClick(e) {
 	    e.preventDefault();
-	    this.props.history.push('/curfews');
+	    this.props.history.push('/remoteServiceLanding');
 	}
 
 	render() {
@@ -27,7 +27,7 @@ class Home extends Component {
 		    <div className="page__content">
 			    <div className="blade">          
 				    <div className="blade__heading" onClick={this.handleClick}>
-				      <img className="blade__icon" src="/app/images/icon_remoteService.svg"/>
+				      <img className="blade__icon" src="/app/images/icon-remoteService.svg"/>
 				      <div>
 				        SUBARU STARLINK&trade;
 				        <div className="blade__sub-heading">Remote Services</div>
@@ -38,7 +38,7 @@ class Home extends Component {
 				</div>
 				<div className="blade">         
 				    <div className="blade__heading">
-				      <img className="blade__icon" src="/app/images/icon_circleHealth.svg"/>
+				      <img className="blade__icon" src="/app/images/icon-circleHealth.svg"/>
 				      <div>
 				        Vehicle Health
 				        <p className="blade__heading-description">5 alert(s) for you Subaru</p>
@@ -48,7 +48,7 @@ class Home extends Component {
 				</div>
 				<div className="blade">
 			        <div className="blade__heading">
-			          <img className="blade__icon" src="/app/images/icon_circleMessage.png"/>
+			          <img className="blade__icon" src="/app/images/icon-circleMessage.png"/>
 			          <div>
 			            Messages
 			            <p className="blade__heading-description">You have 4 message(s)</p>
@@ -58,12 +58,12 @@ class Home extends Component {
 			    </div>
 			    <div className="blade">          
 			        <div className="blade__heading">
-			          <img className="blade__icon" src="/app/images/icon_driverAlert.svg"/>Driver Alerts Settings
+			          <img className="blade__icon" src="/app/images/icon-driverAlert.svg"/>Driver Alerts Settings
 			        </div>
 			    </div>
 			    <div className="blade">         
 			        <div className="blade__heading">
-			          <img className="blade__icon" src="/app/images/icon_circleService.svg"/>
+			          <img className="blade__icon" src="/app/images/icon-circleService.svg"/>
 			          <div>
 			            Services
 			            <p className="blade__heading-description">Manage your vehicle's services</p>

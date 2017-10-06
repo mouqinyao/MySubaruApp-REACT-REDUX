@@ -20,13 +20,37 @@ class CurfewPanel extends Component {
   render() {
     return (
       <div>
-        <Curfew onUpdate={this.onCounterUpdate} caption="First" initValue={this.initValues[0]}/>
-        <Curfew onUpdate={this.onCounterUpdate} caption="First" initValue={this.initValues[1]}/>
-        <Curfew onUpdate={this.onCounterUpdate} caption="First" initValue={this.initValues[2]}/>
-        <Curfew onUpdate={this.onCounterUpdate} caption="First" initValue={this.initValues[3]}/>
-        <Curfew onUpdate={this.onCounterUpdate} caption="First" initValue={this.initValues[4]}/>
-        <Curfew onUpdate={this.onCounterUpdate} caption="First" initValue={this.initValues[5]}/>
-        <Curfew onUpdate={this.onCounterUpdate} caption="First" initValue={this.initValues[6]}/>
+        <header>
+          <img src="/app/images/header.svg" className="header__img"/>
+          <img src="/app/images/icon-back.svg" className="header__icon"/>
+          <div className="header__menu">
+            <div className="header__toggle">
+              <span className="header__toggle-line"></span>
+              <span className="header__toggle-line"></span>
+              <span className="header__toggle-line"></span>
+            </div>
+            <span className="header__menu-text">MENU</span>
+          </div>
+        </header>
+        <div className="page">
+          <div className="vehicle__name">Vehicle Name</div>
+          <div className="page__content">
+            <div className="page-title">Curfews</div>
+            <div className="page__content-body">
+              <Curfew onUpdate={this.onCounterUpdate} caption="First" initValue={this.initValues[0]}/>
+              <Curfew onUpdate={this.onCounterUpdate} caption="First" initValue={this.initValues[1]}/>
+              <Curfew onUpdate={this.onCounterUpdate} caption="First" initValue={this.initValues[2]}/>
+              <Curfew onUpdate={this.onCounterUpdate} caption="First" initValue={this.initValues[3]}/>
+              <Curfew onUpdate={this.onCounterUpdate} caption="First" initValue={this.initValues[4]}/>
+              <Curfew onUpdate={this.onCounterUpdate} caption="First" initValue={this.initValues[5]}/>
+              <Curfew onUpdate={this.onCounterUpdate} caption="First" initValue={this.initValues[6]}/>
+            </div>
+            <div className="btn__group">
+              <div className="btn btn-secondary col-2">Cancel</div>
+              <div className="btn btn-primary col-2">Save</div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
