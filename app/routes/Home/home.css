@@ -41,8 +41,12 @@ header {
 	padding-top: 50px;
 }
 
+	.page__content {
+		padding: 0 15px;
+	}
+
 .blade {
-	margin: 0 15px 1px 15px;
+	margin-bottom: 1px;
 	padding: 0;
 }
 
