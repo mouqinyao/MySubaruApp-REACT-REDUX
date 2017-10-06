@@ -21,7 +21,10 @@ class Home extends Component {
 		      <img src="/app/images/header.svg" className="header__img"/>
 		    </header>
 		    <div className="page">
-		      <div className="vehicle__name">Vehicle Name</div>
+		      <div className="vehicle__name">
+		      	Vehicle Name
+		      	<span className="vehicle__icon"></span>
+		      </div>
 		      <div className="home-hero"></div>
 		    </div>
 		    <div className="page__content">

@@ -13,7 +13,7 @@ class Curfew extends Component {
     return (
       <div className="curfew">
         <div className="curfew__setting">
-          <input className="curfew__input" type="checkbox" id={initValue.day}/>
+          <input className="curfew__input form__input form__input--hidden" type="checkbox" id={initValue.day}/>
           <label className="curfew__input-label" htmlFor={initValue.day}>{initValue.day}</label>
         </div>
         <div className="curfew__time">

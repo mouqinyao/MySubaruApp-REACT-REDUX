@@ -24,7 +24,7 @@ class RemoteServiceLanding extends Component {
 		      </div>
 		    </header>
 		    <div className="page">
-		      <div className="vehicle__name">Vehicle Name</div>		    
+		      <div className="vehicle__name">Vehicle Name<span className="vehicle__icon"></span></div>		    
 			    <div className="page__content">
 			    	<div className="page-title">STARLINK&trade; Remote Services</div>
 			    	<div className="landing__btn-container">
@@ -49,7 +49,7 @@ class RemoteServiceLanding extends Component {
 			    	</div>
 			    	<div className="landing__btn-container">
 			    		<div className="landing__btn">
-			    			<img src="/app/images/icon-horn-light.svg" className="landing__btn-icon"/>Horn &trade; Lights
+			    			<img src="/app/images/icon-horn-light.svg" className="landing__btn-icon"/>Horn &amp; Lights
 			    		</div>
 			    	</div>
 			    	<div className="landing__btn-container">

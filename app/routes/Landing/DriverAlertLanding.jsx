@@ -24,7 +24,7 @@ class DriverAlertLanding extends Component {
 		      </div>
 		    </header>
 		    <div className="page">
-		      <div className="vehicle__name">Vehicle Name</div>
+		      <div className="vehicle__name">Vehicle Name<span className="vehicle__icon"></span></div>
 			    <div className="page__content">
 			    	<div className="page-title">STARLINK&trade; Remote Services</div>
 			    	<div className="landing__btn-container">
