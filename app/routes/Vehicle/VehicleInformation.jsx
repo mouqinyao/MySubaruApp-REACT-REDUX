@@ -1,5 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 
+import Heading from '~/routes/Heading/Heading';
+import VehicleBar from '~/routes/Vehicle/VehicleBar';
+
 class VehicleInformation extends Component {
 
   constructor(props) {
@@ -10,21 +13,10 @@ class VehicleInformation extends Component {
   render() {   
     return (
     	<div>
-    		<header>
-		      <img src="/app/images/header.svg" className="header__img"/>
-		      <img src="/app/images/icon-back.svg" className="header__icon"/>
-		      <div className="header__menu">
-		      	<div className="header__toggle">
-		      		<span className="header__toggle-line"></span>
-		      		<span className="header__toggle-line"></span>
-		      		<span className="header__toggle-line"></span>
-		      	</div>
-		      	<span className="header__menu-text">MENU</span>
-		      </div>
-		    </header>
+    		<Heading/>
 		    <div className="page">
-		    	<div className="vehicle__name">Vehicle Name<span className="vehicle__icon"></span></div>
-			  	<div className="page__content">
+		    	<VehicleBar/>
+		    	<div className="page__content">
 			    	<div className="page-title">Vehicle Information</div>
 			    	<div className="form">
 			    		<div className="form__block form__block--column">

@@ -1,17 +1,30 @@
 import React, { Component, PropTypes } from 'react';
 import './home.css';
 
+import VehicleBar from '~/routes/Vehicle/VehicleBar';
+
 class Home extends Component {
 
 	constructor(props) {
 	    super(props);
-	    this.handleClick = this.handleClick.bind(this);
-
+	    this.goToRemoteServiceLanding = this.goToRemoteServiceLanding.bind(this);
+	    this.goToDriverAlertLanding = this.goToDriverAlertLanding.bind(this);
+		this.goToMessageLanding = this.goToMessageLanding.bind(this);
 	}
 
-	handleClick(e) {
+	goToRemoteServiceLanding(e) {
 	    e.preventDefault();
 	    this.props.history.push('/remoteServiceLanding');
+	}
+
+	goToDriverAlertLanding(e) {
+	    e.preventDefault();
+	    this.props.history.push('/driverAlertLanding');
+	}
+
+	goToMessageLanding(e) {
+	    e.preventDefault();
+	    this.props.history.push('/messageLanding');
 	}
 
 	render() {
@@ -21,15 +34,12 @@ class Home extends Component {
 		      <img src="/app/images/header.svg" className="header__img"/>
 		    </header>
 		    <div className="page">
-		      <div className="vehicle__name">
-		      	Vehicle Name
-		      	<span className="vehicle__icon"></span>
-		      </div>
+		      <VehicleBar/>
 		      <div className="home-hero"></div>
 		    </div>
 		    <div className="page__content">
 			    <div className="blade">          
-				    <div className="blade__heading" onClick={this.handleClick}>
+				    <div className="blade__heading" onClick={this.goToRemoteServiceLanding}>
 				      <img className="blade__icon" src="/app/images/icon-remoteService.svg"/>
 				      <div>
 				        SUBARU STARLINK&trade;
@@ -50,7 +60,7 @@ class Home extends Component {
 				    </div>
 				</div>
 				<div className="blade">
-			        <div className="blade__heading">
+			        <div className="blade__heading" onClick={this.goToMessageLanding}>
 			          <img className="blade__icon" src="/app/images/icon-circleMessage.png"/>
 			          <div>
 			            Messages
@@ -60,7 +70,7 @@ class Home extends Component {
 			        </div>
 			    </div>
 			    <div className="blade">          
-			        <div className="blade__heading">
+			        <div className="blade__heading" onClick={this.goToDriverAlertLanding}>
 			          <img className="blade__icon" src="/app/images/icon-driverAlert.svg"/>Driver Alerts Settings
 			        </div>
 			    </div>

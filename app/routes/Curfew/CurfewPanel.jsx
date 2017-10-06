@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Curfew from './Curfew';
 
+import Heading from '~/routes/Heading/Heading';
+import VehicleBar from '~/routes/Vehicle/VehicleBar';
+
 class CurfewPanel extends Component {
 
   constructor(props) {
@@ -20,20 +23,9 @@ class CurfewPanel extends Component {
   render() {
     return (
       <div>
-        <header>
-          <img src="/app/images/header.svg" className="header__img"/>
-          <img src="/app/images/icon-back.svg" className="header__icon"/>
-          <div className="header__menu">
-            <div className="header__toggle">
-              <span className="header__toggle-line"></span>
-              <span className="header__toggle-line"></span>
-              <span className="header__toggle-line"></span>
-            </div>
-            <span className="header__menu-text">MENU</span>
-          </div>
-        </header>
+        <Heading/>
         <div className="page">
-          <div className="vehicle__name">Karen:4S4BRBAC2C3240040<span className="vehicle__icon"></span></div>
+          <VehicleBar/>
           <div className="page__content">
             <div className="page-title">Curfews</div>
             <div className="page__content-body">

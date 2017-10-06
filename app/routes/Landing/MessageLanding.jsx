@@ -4,7 +4,7 @@ import './landing.css';
 import Heading from '~/routes/Heading/Heading';
 import VehicleBar from '~/routes/Vehicle/VehicleBar';
 
-class DriverAlertLanding extends Component {
+class MessageLanding extends Component {
 
   constructor(props) {
     super(props);
@@ -18,20 +18,20 @@ class DriverAlertLanding extends Component {
 		    <div className="page">
 		    	<VehicleBar/>
 		        <div className="page__content">
-			    	<div className="page-title">STARLINK&trade; Remote Services</div>
+			    	<div className="page-title">Messages</div>
 			    	<div className="landing__btn-container">
 			    		<div className="landing__btn">
-			    			<img src="/app/images/icon-speed-alert.svg" className="landing__btn-icon"/>Speed Alerts
+			    			<img src="/app/images/icon-message.svg" className="landing__btn-icon"/>Important Messages
 			    		</div>
 			    	</div>
 			    	<div className="landing__btn-container">
 			    		<div className="landing__btn">
-			    			<img src="/app/images/icon-boundaries.svg" className="landing__btn-icon"/>Boundary Alerts
+			    			<img src="/app/images/icon-coupon.svg" className="landing__btn-icon"/>Coupons
 			    		</div>
 			    	</div>
 			    	<div className="landing__btn-container">
 			    		<div className="landing__btn">
-			    			<img src="/app/images/icon-curfew.svg" className="landing__btn-icon"/>Curfew Alerts
+			    			<img src="/app/images/icon-event.svg" className="landing__btn-icon"/>Subaru Events
 			    		</div>
 			    	</div>
 			    </div>
@@ -41,4 +41,4 @@ class DriverAlertLanding extends Component {
   }
 }
 
-export default DriverAlertLanding;
+export default MessageLanding;
