@@ -163,6 +163,12 @@ header {
 				padding-left: 7px;
 			}
 
+			.page__content-description {
+				margin: 0;
+				font-size: 14px;
+				font-weight: lighter;
+			}
+
 /* Button Style */
 .btn__group {
 	display: -webkit-box;

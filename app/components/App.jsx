@@ -14,6 +14,8 @@ import RemoteServiceLanding from '~/routes/Landing/RemoteServiceLanding';
 import DriverAlertLanding from '~/routes/Landing/DriverAlertLanding';
 import MessageLanding from '~/routes/Landing/MessageLanding';
 import SupportLanding from '~/routes/Landing/SupportLanding';
+import MyProfileLanding from '~/routes/Landing/MyProfileLanding';
+import ContactInformation from '~/routes/Profile/ContactInformation';
 import MyRetailer from '~/routes/Retailer/MyRetailer';
 import FindRetailer from '~/routes/Retailer/FindRetailer';
 import AuthorizedRetailer from '~/routes/Retailer/AuthorizedRetailer';
@@ -36,6 +38,9 @@ const App = () => (
       <Route path="/driverAlertLanding" component={DriverAlertLanding}/>
       <Route path="/supportLanding" component={SupportLanding}/>
       <Route path="/messageLanding" component={MessageLanding}/>
+      <Route path="/myProfileLanding" component={MyProfileLanding}/>
+
+      <Route path="/contactInformation" component={ContactInformation}/>
       <Route path="/myRetailer" component={MyRetailer}/>
       <Route path="/findRetailer" component={FindRetailer}/>
       <Route path="/authorizedRetailer" component={AuthorizedRetailer}/>
