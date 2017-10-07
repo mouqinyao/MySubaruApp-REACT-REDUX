@@ -9,9 +9,8 @@ Steps to run the application in the local environment:
 2. npm install.
 3. npm run start:dev.
 
-# Screenshots of App
-Home Page
-![Alt text](/app/images/app-home.jpg?raw=true "Optional Title")
+# Home Page
+![Alt text](/app/images/app-home.png?raw=true "Optional Title")
 
-Remote Service Landing Page
-![Alt text](/app/images/app-landing.jpg?raw=true "Optional Title")
+# Remote Services Landing Page
+![Alt text](/app/images/app-landing.png?raw=true "Optional Title")
