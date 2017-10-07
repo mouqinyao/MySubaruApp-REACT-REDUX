@@ -72,6 +72,42 @@ header {
 	            -webkit-transition: all .3s ease-in-out;
 	            transition: all .3s ease-in-out;
 			}
+
+/* Menu */
+
+.menu {
+	position: fixed;
+	top: 50px; 
+	right: 0;
+	height: 100%;
+	min-width: 300px;
+	color: #fff;
+	background-color: #363331;
+	overflow-y: auto;
+	z-index: 15;
+}
+
+.menu--active {
+	display: block;
+}
+
+.menu--inactive {
+	display: none;
+}
+
+	.menu__list {
+		margin: 0;
+		padding: 20px 10px 0 20px;
+	}
+
+	.menu__list li {
+		padding: 10px 0;
+		font-size: 14px;
+		border-bottom: 1px solid #b2b2b2;
+		list-style: none;
+		cursor: pointer;
+	}
+
 /* Vehicle Bar */
 .vehicle__name {
 	position: relative;
@@ -264,6 +300,14 @@ header {
 }
 
 /* Helper Class */
+.active {
+	display: block;
+}
+
+.inactive {
+	display: none;
+}
+
 .text-link {
 	display: inline-block;
     font-weight: bold;

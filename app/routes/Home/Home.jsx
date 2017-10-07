@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
 import VehicleBar from '~/routes/Vehicle/VehicleBar';
+import Menu from '~/routes/Menu/Menu';
 
 class Home extends Component {
 
@@ -10,6 +11,11 @@ class Home extends Component {
 	    this.goToDriverAlertLanding = this.goToDriverAlertLanding.bind(this);
 		this.goToMessageLanding = this.goToMessageLanding.bind(this);
 		this.goToSupportLanding = this.goToSupportLanding.bind(this);
+		this.toggleMenu = this.toggleMenu.bind(this);
+
+		this.state = {
+			isActive: false
+		}
 	}
 
 	goToRemoteServiceLanding(e) {
@@ -32,12 +38,18 @@ class Home extends Component {
 	    this.props.history.push('/supportLanding');
 	}
 
+	toggleMenu(e) {
+		e.preventDefault();
+		const currentState = this.state.isActive;
+        this.setState({ isActive: !currentState });
+	}
+
 	render() {
 		return (
 		  <div> 	
 		    <header>
 		      <img src="/app/images/header.svg" className="header__img"/>
-		      <div className="header__menu">
+		      <div className="header__menu" onClick={this.toggleMenu}>
 		      	<div className="header__toggle">
 		      		<span className="header__toggle-line"></span>
 		      		<span className="header__toggle-line"></span>
@@ -107,6 +119,9 @@ class Home extends Component {
 			          <div className="blade__heading-dots"></div>
 			        </div>
 			    </div>
+		    </div>
+		    <div className={this.state.isActive ? 'menu--active': 'menu--inactive'}>
+		    	<Menu/>
 		    </div>
 		  </div>
 		);

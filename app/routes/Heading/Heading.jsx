@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { BrowserRouter as Router, Route, withRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, withRouter, Link } from 'react-router-dom';
 
 class Heading extends Component {
 
@@ -21,18 +21,20 @@ class Heading extends Component {
 
   render() {   
     return (
-    	<header>
-	      <img src="/app/images/header.svg" className="header__img" onClick={this.backToHome}/>
-	      <img src="/app/images/icon-back.svg" className="header__icon" onClick={this.goBack}/>
-	      <div className="header__menu">
-	      	<div className="header__toggle">
-	      		<span className="header__toggle-line"></span>
-	      		<span className="header__toggle-line"></span>
-	      		<span className="header__toggle-line"></span>
-	      	</div>
-	      	<span className="header__menu-text">MENU</span>
-	      </div>
-	    </header>
+      <div>
+      	<header>
+  	      <img src="/app/images/header.svg" className="header__img" onClick={this.backToHome}/>
+  	      <img src="/app/images/icon-back.svg" className="header__icon" onClick={this.goBack}/>
+          <div className="header__menu">
+  	      	<div className="header__toggle">
+  	      		<span className="header__toggle-line"></span>
+  	      		<span className="header__toggle-line"></span>
+  	      		<span className="header__toggle-line"></span>
+  	      	</div>
+  	      	<span className="header__menu-text">MENU</span>
+  	      </div>
+  	    </header>
+      </div>
     );
   }
 }
