@@ -32,14 +32,22 @@ class Home extends Component {
 		  <div> 	
 		    <header>
 		      <img src="/app/images/header.svg" className="header__img"/>
+		      <div className="header__menu">
+		      	<div className="header__toggle">
+		      		<span className="header__toggle-line"></span>
+		      		<span className="header__toggle-line"></span>
+		      		<span className="header__toggle-line"></span>
+		      	</div>
+		      	<span className="header__menu-text">MENU</span>
+		      </div>
 		    </header>
 		    <div className="page">
 		      <VehicleBar/>
 		      <div className="home-hero"></div>
 		    </div>
 		    <div className="page__content">
-			    <div className="blade">          
-				    <div className="blade__heading" onClick={this.goToRemoteServiceLanding}>
+			    <div className="blade" onClick={this.goToRemoteServiceLanding}>          
+				    <div className="blade__heading">
 				      <img className="blade__icon" src="/app/images/icon-remoteService.svg"/>
 				      <div>
 				        SUBARU STARLINK&trade;
@@ -59,8 +67,8 @@ class Home extends Component {
 				      <div className="blade__heading-dots"></div>
 				    </div>
 				</div>
-				<div className="blade">
-			        <div className="blade__heading" onClick={this.goToMessageLanding}>
+				<div className="blade" onClick={this.goToMessageLanding}>
+			        <div className="blade__heading">
 			          <img className="blade__icon" src="/app/images/icon-circleMessage.png"/>
 			          <div>
 			            Messages
@@ -69,8 +77,8 @@ class Home extends Component {
 			          <div className="blade__heading-dots"></div>
 			        </div>
 			    </div>
-			    <div className="blade">          
-			        <div className="blade__heading" onClick={this.goToDriverAlertLanding}>
+			    <div className="blade" onClick={this.goToDriverAlertLanding}>          
+			        <div className="blade__heading">
 			          <img className="blade__icon" src="/app/images/icon-driverAlert.svg"/>Driver Alerts Settings
 			        </div>
 			    </div>

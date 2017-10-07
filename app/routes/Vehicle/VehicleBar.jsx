@@ -16,7 +16,7 @@ class VehicleBar extends Component {
   render() {   
     return (
     	<div className="vehicle__name">
-	    	Vehicle Name
+	    	Karen:4S4BRBAC2C3240040
 	    	<span className="vehicle__icon" onClick={this.getVehicleInformation}></span>
     	</div>
     );

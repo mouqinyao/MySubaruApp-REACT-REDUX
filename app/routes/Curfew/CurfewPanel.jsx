@@ -36,10 +36,10 @@ class CurfewPanel extends Component {
           <div className="page__content">
             <div className="page-title">Curfews</div>
             <div className="page__content-body">
-              <div className="flex">
-                <a href="#" className="text-link flex__item--fill">Apply All</a>
-                <label>Start Time</label>
-                <label>End Time</label>
+              <div className="page__content-heading">
+                <a href="#" className="page__content-heading-link text-link flex__item--fill">Apply All</a>
+                <label className="page__content-heading-label">Start Time</label>
+                <label className="page__content-heading-label">End Time</label>
               </div>
               <Curfew initValue={this.initValues[0]}/>
               <Curfew initValue={this.initValues[1]}/>

@@ -7,6 +7,12 @@ class CurfewReview extends Component {
 
 	constructor(props) {
 	    super(props);
+	    this.createCurfew = this.createCurfew.bind(this);
+	}
+
+	createCurfew(e) {
+		e.preventDefault();
+		this.props.history.push('/createCurfew');
 	}
 
 	render() {
@@ -37,7 +43,7 @@ class CurfewReview extends Component {
 						      <div className="blade__heading-dots"></div>
 						    </div>
 						</div>
-		            	<div className="blade">          
+		            	<div className="blade" onClick={this.createCurfew}>          
 						    <div className="blade__heading">
 						      <img className="blade__icon blade__icon--small" src="/app/images/icon-circle-plus.svg"/>
 						      <div>

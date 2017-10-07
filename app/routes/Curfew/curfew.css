@@ -19,12 +19,29 @@
 	}
 
 		.curfew__input {
-
+			display: none;
 		}
 
-		.curfew__input-label {
-
+		.curfew__input + label {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			padding-left: 30px;
+			min-height: 25px;
+			min-width: 25px;
+			background-size: 25px 25px;
+		    background-image: url(/app/images/checkbox-uncheck.svg);
+			background-repeat: no-repeat;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
 		}
+
+		.curfew__input:checked + label {
+			background-image: url(/app/images/checkbox-checked.svg);
+		}
+
+		.curfew__input-label {}
 
 	.curfew__time {
 		position: relative;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import './app.css';
 
@@ -18,6 +18,7 @@ const App = () => (
   <Router>
     <div>
       <Route path="/" exact component={Home}/>
+      <Route path="/home" exact component={Home}/>
       <Route path="/vehicleInformation" component={VehicleInformation}/>
       <Route path="/remoteServiceLanding" component={RemoteServiceLanding}/>
       <Route path="/driverAlertLanding" component={DriverAlertLanding}/>
