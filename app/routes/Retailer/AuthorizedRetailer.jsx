@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './retailer.css';
 
 import Heading from '~/routes/Heading/Heading';
 import VehicleBar from '~/routes/Vehicle/VehicleBar';

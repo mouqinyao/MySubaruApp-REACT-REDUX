@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import './curfew.css';
 
 class Curfew extends Component {
 

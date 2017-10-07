@@ -41,6 +41,10 @@
 		text-decoration: none;
 	}
 
+	.retailer__address--bottom-spacing {
+		margin-bottom: 10px;
+	}
+
 	.retailer__action {
 		display: flex;
 	}
@@ -52,6 +56,7 @@
 			border: 1px solid #0099ff;
 			border-radius: 5px;
 			text-align: center;
+			cursor: pointer;
 		}
 
 		.retailer__action-box--right-spacing {
@@ -63,4 +68,40 @@
 		.retailer__results-list-item {
 			padding: 15px 0;
 			border-bottom: 1px solid #b2b2b2;
+		}
+
+	.retailer__requirements {
+		padding: 10px;
+		border-top: 1px solid #b2b2b2;
+		background: #fff;
+	}
+
+		.retailer__requirements-title {
+			margin: 0;
+			padding: 10px 0;
+			font-size: 18px;
+			font-weight: lighter;
+		}
+
+		.retailer__requirements-list {
+			margin: 0;
+			line-height: 18px;
+			font-size: 14px;
+			font-weight: lighter;
+		}
+
+		.retailer__requirements-list li {
+			padding-bottom: 10px;
+		}
+
+		.retailer__requirements-text {
+			margin: 0 0 10px 0;
+			line-height: 18px;
+			font-size: 14px;
+			font-weight: lighter;
+		}
+
+		.retailer__requirements-footer {
+			font-size: 12px;
+			font-weight: lighter;
 		}

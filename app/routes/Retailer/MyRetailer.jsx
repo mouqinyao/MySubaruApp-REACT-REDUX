@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './retailer.css';
 
 import Heading from '~/routes/Heading/Heading';
 import VehicleBar from '~/routes/Vehicle/VehicleBar';
@@ -8,7 +7,12 @@ class MyRetailer extends Component {
 
   constructor(props) {
     super(props);
-    
+    this.findRetailer = this.findRetailer.bind(this);
+  }
+
+  findRetailer(e) {
+    e.preventDefault();
+    this.props.history.push('/findRetailer');
   }
 
   render() {
@@ -29,9 +33,9 @@ class MyRetailer extends Component {
                 </div>
                 <div className="btn btn-primary">Schedule a Service Appointment</div>
                 <div className="retailer__action">
-                  <div className="retailer__action-box retailer__action-box--right-spacing">Retailer Website</div>
-                  <div className="retailer__action-box retailer__action-box--right-spacing">Get Directions</div>
-                  <div className="retailer__action-box">Find a Retailer</div>
+                  <div className="flex flex--vertical-center retailer__action-box retailer__action-box--right-spacing">Retailer Website</div>
+                  <div className="flex flex--vertical-center retailer__action-box retailer__action-box--right-spacing">Get Directions</div>
+                  <div className="flex flex--vertical-center retailer__action-box" onClick={this.findRetailer}>Find a Retailer</div>
                 </div>
               </div>
             </div>            

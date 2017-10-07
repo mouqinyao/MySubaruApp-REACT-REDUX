@@ -6,6 +6,7 @@ class Heading extends Component {
   constructor(props) {
     super(props);
     this.goBack = this.goBack.bind(this);
+    this.backToHome = this.backToHome.bind(this);
   }
 
   goBack(e) {
@@ -13,10 +14,15 @@ class Heading extends Component {
     this.props.history.goBack();
   }
 
+  backToHome(e) {
+    e.preventDefault();
+    this.props.history.push('/home');
+  }
+
   render() {   
     return (
     	<header>
-	      <img src="/app/images/header.svg" className="header__img"/>
+	      <img src="/app/images/header.svg" className="header__img" onClick={this.backToHome}/>
 	      <img src="/app/images/icon-back.svg" className="header__icon" onClick={this.goBack}/>
 	      <div className="header__menu">
 	      	<div className="header__toggle">

@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import './landing.css';
 
 import Heading from '~/routes/Heading/Heading';
 import VehicleBar from '~/routes/Vehicle/VehicleBar';

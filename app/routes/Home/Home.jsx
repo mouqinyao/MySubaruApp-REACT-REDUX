@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import './home.css';
 
 import VehicleBar from '~/routes/Vehicle/VehicleBar';
 
