@@ -8,6 +8,10 @@ import VehicleInformation from '~/routes/Vehicle/VehicleInformation';
 import RemoteServiceLanding from '~/routes/Landing/RemoteServiceLanding';
 import DriverAlertLanding from '~/routes/Landing/DriverAlertLanding';
 import MessageLanding from '~/routes/Landing/MessageLanding';
+import SupportLanding from '~/routes/Landing/SupportLanding';
+import MyRetailer from '~/routes/Retailer/MyRetailer';
+import FindRetailer from '~/routes/Retailer/FindRetailer';
+import AuthorizedRetailer from '~/routes/Retailer/AuthorizedRetailer';
 
 import CurfewPanel from '~/routes/Curfew/CurfewPanel';
 import CurfewReview from '~/routes/Curfew/CurfewReview';
@@ -22,7 +26,11 @@ const App = () => (
       <Route path="/vehicleInformation" component={VehicleInformation}/>
       <Route path="/remoteServiceLanding" component={RemoteServiceLanding}/>
       <Route path="/driverAlertLanding" component={DriverAlertLanding}/>
-      <Route path="/messageLanding" component={MessageLanding}/>
+      <Route path="/supportLanding" component={SupportLanding}/>
+      <Route path="/myRetailer" component={MyRetailer}/>
+      <Route path="/findRetailer" component={FindRetailer}/>
+      <Route path="/authorizedRetailer" component={AuthorizedRetailer}/>
+
       <Route path="/createCurfew" component={CurfewPanel}/>
       <Route path="/reviewCurfew" component={CurfewReview}/>
       <Route path="/authorize" component={PinPanel}/>     

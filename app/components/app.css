@@ -252,6 +252,10 @@ header {
 	        justify-content: space-between;
 }
 
+.flex--vertical-center {
+	align-items: center;
+}
+
 .flex__item--fill {
 	-webkit-box-flex: 1;
 	    -ms-flex: 1;
@@ -267,4 +271,12 @@ header {
 
 .col-2 {
 	width: 49%;
+}
+
+.col-3 {
+	width: 30%;
+}
+
+.text-align-center {
+	text-align: center;
 }

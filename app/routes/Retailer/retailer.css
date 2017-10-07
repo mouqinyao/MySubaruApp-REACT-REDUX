@@ -1,0 +1,66 @@
+.retailer {
+	padding: 10px;
+}
+
+	.retailer__title {
+		padding-top: 10px;
+		text-align: center;
+	    font-size: 22px;
+	    font-weight: lighter;
+	}
+
+	.retailer__title--bottom-spacing {
+		padding-bottom: 15px;
+	}
+
+	.retailer__description {
+		font-size: 14px;
+		font-weight: lighter;
+	}
+
+	.retailer__search {
+		padding: 10px 0;
+		width: 100%;
+		border: 1px solid #0099ff;
+	}
+
+	.retailer__name {
+		margin-bottom: 5px;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	.retailer__address {
+		margin: 0;
+		font-weight: lighter;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.retailer__address--no-underline {
+		text-decoration: none;
+	}
+
+	.retailer__action {
+		display: flex;
+	}
+
+		.retailer__action-box {
+			padding: 10px;
+			color: #0099ff;
+			width: 32%;
+			border: 1px solid #0099ff;
+			border-radius: 5px;
+			text-align: center;
+		}
+
+		.retailer__action-box--right-spacing {
+			margin-right: 2%;
+		}
+
+	.retailer__results-list {}
+
+		.retailer__results-list-item {
+			padding: 15px 0;
+			border-bottom: 1px solid #b2b2b2;
+		}

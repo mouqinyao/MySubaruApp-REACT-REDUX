@@ -10,6 +10,7 @@ class Home extends Component {
 	    this.goToRemoteServiceLanding = this.goToRemoteServiceLanding.bind(this);
 	    this.goToDriverAlertLanding = this.goToDriverAlertLanding.bind(this);
 		this.goToMessageLanding = this.goToMessageLanding.bind(this);
+		this.goToSupportLanding = this.goToSupportLanding.bind(this);
 	}
 
 	goToRemoteServiceLanding(e) {
@@ -25,6 +26,11 @@ class Home extends Component {
 	goToMessageLanding(e) {
 	    e.preventDefault();
 	    this.props.history.push('/messageLanding');
+	}
+
+	goToSupportLanding(e) {
+	    e.preventDefault();
+	    this.props.history.push('/supportLanding');
 	}
 
 	render() {
@@ -88,6 +94,16 @@ class Home extends Component {
 			          <div>
 			            Services
 			            <p className="blade__heading-description">Manage your vehicle's services</p>
+			          </div>
+			          <div className="blade__heading-dots"></div>
+			        </div>
+			    </div>
+			    <div className="blade" onClick={this.goToSupportLanding}>         
+			        <div className="blade__heading">
+			          <img className="blade__icon" src="/app/images/icon-customerSupport.svg"/>
+			          <div>
+			            Support
+			            <p className="blade__heading-description">Have a question? Find answers here</p>
 			          </div>
 			          <div className="blade__heading-dots"></div>
 			        </div>
