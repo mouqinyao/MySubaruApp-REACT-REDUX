@@ -218,6 +218,10 @@ header {
 	background-color: #fff;
 }
 
+.form--with-bg {
+	background-color: #efefef;
+}
+
 	.form__block {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -237,6 +241,12 @@ header {
 	    font-size: 12px;
 	    text-align: left;
 	    color: #595959;
+	}
+
+	.form__label--dark {
+		font-size: 14px;
+		font-weight: bold;
+		color: #000000;
 	}
 
 	.form__input {
@@ -334,4 +344,8 @@ header {
 
 .white {
 	color: #fff;
+}
+
+.red {
+	color: red;
 }

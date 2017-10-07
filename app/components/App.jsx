@@ -16,6 +16,8 @@ import MessageLanding from '~/routes/Landing/MessageLanding';
 import SupportLanding from '~/routes/Landing/SupportLanding';
 import MyProfileLanding from '~/routes/Landing/MyProfileLanding';
 import ContactInformation from '~/routes/Profile/ContactInformation';
+import ChangePassword from '~/routes/Profile/ChangePassword';
+import ManageSecurityQuestion from '~/routes/Profile/ManageSecurityQuestion';
 import MyRetailer from '~/routes/Retailer/MyRetailer';
 import FindRetailer from '~/routes/Retailer/FindRetailer';
 import AuthorizedRetailer from '~/routes/Retailer/AuthorizedRetailer';
@@ -41,6 +43,8 @@ const App = () => (
       <Route path="/myProfileLanding" component={MyProfileLanding}/>
 
       <Route path="/contactInformation" component={ContactInformation}/>
+      <Route path="/changePassword" component={ChangePassword}/>
+      <Route path="/manageSecurityQuestion" component={ManageSecurityQuestion}/>
       <Route path="/myRetailer" component={MyRetailer}/>
       <Route path="/findRetailer" component={FindRetailer}/>
       <Route path="/authorizedRetailer" component={AuthorizedRetailer}/>
