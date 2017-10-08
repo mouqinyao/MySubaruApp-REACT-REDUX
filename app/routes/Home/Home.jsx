@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
 import VehicleBar from '~/routes/Vehicle/VehicleBar';
+import Heading from '~/routes/Heading/Heading';
 import Menu from '~/routes/Menu/Menu';
 
 class Home extends Component {
@@ -47,17 +48,7 @@ class Home extends Component {
 	render() {
 		return (
 		  <div> 	
-		    <header>
-		      <img src="/app/images/header.svg" className="header__img"/>
-		      <div className="header__menu" onClick={this.toggleMenu}>
-		      	<div className="header__toggle">
-		      		<span className="header__toggle-line"></span>
-		      		<span className="header__toggle-line"></span>
-		      		<span className="header__toggle-line"></span>
-		      	</div>
-		      	<span className="header__menu-text">MENU</span>
-		      </div>
-		    </header>
+		    <Heading toggleMenu={this.toggleMenu}/>
 		    <div className="page">
 		      <VehicleBar/>
 		      <div className="home-hero"></div>

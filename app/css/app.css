@@ -25,7 +25,17 @@ header {
 	    cursor: pointer;
 	}
 
-	.header__icon {
+	.header__icon--active {
+		display: block;
+		position: absolute;
+	    width: 30px;
+	    left: 10px;
+	    top: 10px;
+	    cursor: pointer;
+	}
+
+	.header__icon--inactive {
+		display: none;
 		position: absolute;
 	    width: 30px;
 	    left: 10px;

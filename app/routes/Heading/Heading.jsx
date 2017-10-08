@@ -6,7 +6,7 @@ class Heading extends Component {
   constructor(props) {
     super(props);
     this.goBack = this.goBack.bind(this);
-    this.backToHome = this.backToHome.bind(this);
+    this.backToHome = this.backToHome.bind(this); 
   }
 
   goBack(e) {
@@ -19,13 +19,18 @@ class Heading extends Component {
     this.props.history.push('/home');
   }
 
-  render() {   
+  render() {  
+     
+    let path = this.props.history.location.pathname;
+    let goBackIsActive;
+    path == '/home' ? goBackIsActive = false : goBackIsActive = true;
+
     return (
       <div>
       	<header>
   	      <img src="/app/images/header.svg" className="header__img" onClick={this.backToHome}/>
-  	      <img src="/app/images/icon-back.svg" className="header__icon" onClick={this.goBack}/>
-          <div className="header__menu">
+  	      <img src="/app/images/icon-back.svg" className={goBackIsActive ? 'header__icon--active' : 'header__icon--inactive'} onClick={this.goBack}/>
+          <div className="header__menu" onClick={this.props.toggleMenu}>
   	      	<div className="header__toggle">
   	      		<span className="header__toggle-line"></span>
   	      		<span className="header__toggle-line"></span>
