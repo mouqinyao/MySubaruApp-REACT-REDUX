@@ -1,14 +1,18 @@
 import React, { Component, PropTypes } from 'react';
 import { BrowserRouter as Router, Route, withRouter, Link } from 'react-router-dom';
 
+import Menu from '~/routes/Menu/Menu';
+
 class Heading extends Component {
 
   constructor(props) {
     super(props);
     this.goBack = this.goBack.bind(this);
-    this.backToHome = this.backToHome.bind(this); 
+    this.backToHome = this.backToHome.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this); 
 
     this.state = {
+      isActive: false,
       goBackIsActive: false
     }
   }
@@ -23,6 +27,12 @@ class Heading extends Component {
     this.props.history.push('/home');
   }
 
+  toggleMenu(e) {
+    e.preventDefault();
+    const currentState = this.state.isActive;
+    this.setState({ isActive: !currentState });
+  }
+
   componentWillMount() {    
     const path = this.props.history.location.pathname;   
     path == '/home' ? this.setState({goBackIsActive: false}) : this.setState({goBackIsActive: true});
@@ -34,7 +44,7 @@ class Heading extends Component {
       	<header>
   	      <img src="/app/images/header.svg" className="header__img" onClick={this.backToHome}/>
   	      <img src="/app/images/icon-back.svg" className={this.state.goBackIsActive ? 'header__icon--active' : 'header__icon--inactive'} onClick={this.goBack}/>
-          <div className="header__menu" onClick={this.props.toggleMenu}>
+          <div className="header__menu" onClick={this.toggleMenu}>
   	      	<div className="header__toggle">
   	      		<span className="header__toggle-line"></span>
   	      		<span className="header__toggle-line"></span>
@@ -43,6 +53,9 @@ class Heading extends Component {
   	      	<span className="header__menu-text">MENU</span>
   	      </div>
   	    </header>
+        <div className={this.state.isActive ? 'menu--active': 'menu--inactive'}>
+          <Menu />
+        </div>
       </div>
     );
   }

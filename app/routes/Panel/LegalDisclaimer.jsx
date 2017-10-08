@@ -5,13 +5,20 @@ class LegalDisclaimer extends Component {
   constructor(props) {
     super(props);
 
+    this.goToPreviousState = this.goToPreviousState.bind(this);
+
+  }
+
+  goToPreviousState(e) {
+    e.preventDefault();
+    this.props.history.goBack();
   }
 
   render() {   
     return (
     	<div>
     		<div className="panel">
-                <div className="panel__close close"></div>
+                <div className="panel__close close" onClick={this.goToPreviousState}></div>
                 <div className="panel__content pin">
                     <h2 className="panel__content-title">Legal Disclaimers</h2>                    
                     <p className="panel__content-sub-title">Content will open in a new page</p>            

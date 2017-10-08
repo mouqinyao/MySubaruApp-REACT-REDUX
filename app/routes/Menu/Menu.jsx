@@ -1,26 +1,70 @@
 import React, { Component, PropTypes } from 'react';
 
+import { BrowserRouter as Router, Route, withRouter, Link } from 'react-router-dom';
+
 class Menu extends Component {
 
-  constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
 
-  }
+        this.goToRemoteServiceLanding = this.goToRemoteServiceLanding.bind(this);
+        this.goToRoadsideAssistance = this.goToRoadsideAssistance.bind(this);
+        this.goToService = this.goToService.bind(this);
+        this.goToProfile = this.goToProfile.bind(this);
+        this.goToWarranty = this.goToWarranty.bind(this);
+        this.goToSupportLanding = this.goToSupportLanding.bind(this);
+        this.goToLegalDisclaimer = this.goToLegalDisclaimer.bind(this);
+    }
+
+    goToRemoteServiceLanding(e) {
+        e.preventDefault();
+        this.props.history.push('/remoteServiceLanding');
+    }
+
+    goToRoadsideAssistance(e) {
+        e.preventDefault();
+        this.props.history.push('/roadsideAssistance');
+    }
+
+    goToService(e) {
+        e.preventDefault();
+        this.props.history.push('/service');
+    }
+
+    goToProfile(e) {
+        e.preventDefault();
+        this.props.history.push('/contactInformation');
+    }
+
+    goToWarranty(e) {
+        e.preventDefault();
+        this.props.history.push('/warranty');
+    }
+
+    goToSupportLanding(e) {
+        e.preventDefault();
+        this.props.history.push('/supportLanding');
+    }
+
+    goToLegalDisclaimer(e) {
+        e.preventDefault();
+        this.props.history.push('/legalDisclaimer');
+    }
 
   render() {   
     return (
     	<div className="menu">
     		<ul className="menu__list">
     			<li>Home</li>
-    			<li>SUBARU STARLINK&trade; Services</li>
-    			<li>Roadside Assistance</li>
-    			<li>Service</li>
-    			<li>My Profile</li>
+    			<li onClick={this.goToRemoteServiceLanding}>SUBARU STARLINK&trade; Services</li>
+    			<li onClick={this.goToRoadsideAssistance}>Roadside Assistance</li>
+    			<li onClick={this.goToService}>Service</li>
+    			<li onClick={this.goToProfile}>My Profile</li>
     			<li>My Vehicles</li>
-    			<li>Warranty &amp; Extended Services</li>
+    			<li onClick={this.goToWarranty}>Warranty &amp; Extended Services</li>
     			<li>How To and Info</li>
-    			<li>Support</li>
-    			<li>Legal Disclaimers</li>
+    			<li onClick={this.goToSupportLanding}>Support</li>
+    			<li onClick={this.goToLegalDisclaimer}>Legal Disclaimers</li>
     			<li>Log Out</li>
     		</ul>
     	</div>
@@ -28,4 +72,4 @@ class Menu extends Component {
   }
 }
 
-export default Menu;
+export default withRouter(Menu);

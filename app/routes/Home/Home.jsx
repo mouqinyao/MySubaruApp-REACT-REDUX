@@ -8,15 +8,11 @@ class Home extends Component {
 
 	constructor(props) {
 	    super(props);
+
 	    this.goToRemoteServiceLanding = this.goToRemoteServiceLanding.bind(this);
 	    this.goToDriverAlertLanding = this.goToDriverAlertLanding.bind(this);
 		this.goToMessageLanding = this.goToMessageLanding.bind(this);
 		this.goToSupportLanding = this.goToSupportLanding.bind(this);
-		this.toggleMenu = this.toggleMenu.bind(this);
-
-		this.state = {
-			isActive: false
-		}
 	}
 
 	goToRemoteServiceLanding(e) {
@@ -39,16 +35,10 @@ class Home extends Component {
 	    this.props.history.push('/supportLanding');
 	}
 
-	toggleMenu(e) {
-		e.preventDefault();
-		const currentState = this.state.isActive;
-        this.setState({ isActive: !currentState });
-	}
-
 	render() {
 		return (
 		  <div> 	
-		    <Heading toggleMenu={this.toggleMenu}/>
+		    <Heading />
 		    <div className="page">
 		      <VehicleBar/>
 		      <div className="home-hero"></div>
@@ -110,9 +100,6 @@ class Home extends Component {
 			          <div className="blade__heading-dots"></div>
 			        </div>
 			    </div>
-		    </div>
-		    <div className={this.state.isActive ? 'menu--active': 'menu--inactive'}>
-		    	<Menu/>
 		    </div>
 		  </div>
 		);

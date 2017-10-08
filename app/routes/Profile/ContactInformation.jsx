@@ -8,6 +8,19 @@ class ContactInformation extends Component {
   constructor(props) {
     super(props);
 
+    this.changePassword = this.changePassword.bind(this);
+    this.manageSecurityQuestion = this.manageSecurityQuestion.bind(this);
+
+  }
+
+  changePassword(e) {
+  	e.preventDefault();
+  	this.props.history.push('/changePassword');
+  }
+
+  manageSecurityQuestion(e) {
+  	e.preventDefault();
+  	this.props.history.push('/manageSecurityQuestion');
   }
 
   render() {   
@@ -63,8 +76,8 @@ class ContactInformation extends Component {
 			    	<div className="btn btn-primary btn--top-spacing">Edit</div>
 			    	<div className="page-title">Security Settings</div>
 			    	<div className="form">
-			    		<div className="btn btn-primary">Manage Security Questions</div>
-			    		<div className="btn btn-primary btn--top-spacing">Change Password</div>
+			    		<div className="btn btn-primary" onClick={this.manageSecurityQuestion}>Manage Security Questions</div>
+			    		<div className="btn btn-primary btn--top-spacing" onClick={this.changePassword}>Change Password</div>
 			    		<p className="page__content-description">Need to update additional security settings? Log into the full MySubaru experience at www.mysubaru.com to manage your security settings.</p>
 			    	</div>
 			    </div>

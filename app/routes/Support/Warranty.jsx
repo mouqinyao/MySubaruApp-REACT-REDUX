@@ -8,6 +8,12 @@ class Warranty extends Component {
   constructor(props) {
     super(props);
     
+    this.warrantyFAQ = this.warrantyFAQ.bind(this);
+  }
+
+  warrantyFAQ(e) {
+    e.preventDefault();
+    this.props.history.push('/warrantyFAQ');
   }
 
   render() {
@@ -62,7 +68,7 @@ class Warranty extends Component {
                       <div className="retailer__mileage">LIFETIME</div>
                       <p className="retailer__warranty">Seat Belt Lifetime Limited Warranty</p>
                   </div>
-                  <div className="btn btn-primary btn--top-spacing">Warranty Frequently Asked Questions</div>
+                  <div className="btn btn-primary btn--top-spacing" onClick={this.warrantyFAQ}>Warranty Frequently Asked Questions</div>
                 </div>
               </div>
             </div>            
