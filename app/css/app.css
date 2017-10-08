@@ -212,6 +212,15 @@ header {
 		background: #6b6b6b;
 	}
 
+	.btn-info {
+		height: 40px;
+		line-height: 40px;
+		font-weight: bold;
+		border: 1px solid #0099ff;
+		color: #0099ff;
+		background-color: #fff;
+	}
+
 /* Form Elements */
 .form {
 	padding: 10px;
@@ -221,6 +230,13 @@ header {
 .form--with-bg {
 	background-color: #efefef;
 }
+
+	.form__title {
+		padding: 0 10px 10px;
+		font-size: 18px;
+		font-weight: lighter;
+		text-align: center;
+	}
 
 	.form__block {
 		display: -webkit-box;
@@ -247,6 +263,10 @@ header {
 		font-size: 14px;
 		font-weight: bold;
 		color: #000000;
+	}
+
+	.form__label--blue {
+		color: #0099ff;
 	}
 
 	.form__input {

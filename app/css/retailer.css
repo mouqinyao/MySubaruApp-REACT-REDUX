@@ -70,6 +70,19 @@
 			border-bottom: 1px solid #b2b2b2;
 		}
 
+		.retailer__mileage {
+			margin-bottom: 5px;
+			font-size: 14px;
+			font-weight: bold;
+			color: #b2b2b2;
+		}
+
+		.retailer__warranty {
+			margin: 0;
+			font-size: 12px;
+			font-weight: lighter;
+		}
+
 	.retailer__requirements {
 		padding: 10px;
 		border-top: 1px solid #b2b2b2;

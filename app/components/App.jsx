@@ -6,6 +6,7 @@ import '~/css/home.css';
 import '~/css/landing.css';
 import '~/css/panel.css';
 import '~/css/retailer.css';
+import '~/css/accordion.css';
 import '~/css/curfew.css';
 
 import Home from '~/routes/Home/Home';
@@ -24,11 +25,16 @@ import AuthorizedRetailer from '~/routes/Retailer/AuthorizedRetailer';
 import RoadsideAssistance from '~/routes/Support/RoadsideAssistance';
 import StarlinkCustomerCare from '~/routes/Support/StarlinkCustomerCare';
 import CustomerCare from '~/routes/Support/CustomerCare';
+import Warranty from '~/routes/Support/Warranty';
+import WarrantyFAQ from '~/routes/Support/WarrantyFAQ';
+import MainService from '~/routes/Service/MainService';
+import AddService from '~/routes/Service/AddService';
 
 import CurfewPanel from '~/routes/Curfew/CurfewPanel';
 import CurfewReview from '~/routes/Curfew/CurfewReview';
 
 import PinPanel from '~/routes/Panel/PinPanel';
+import LegalDisclaimer from '~/routes/Panel/LegalDisclaimer';
 
 const App = () => ( 
   <Router>
@@ -51,10 +57,15 @@ const App = () => (
       <Route path="/roadsideAssistance" component={RoadsideAssistance}/>
       <Route path="/starlinkCustomerCare" component={StarlinkCustomerCare}/>
       <Route path="/customerCare" component={CustomerCare}/>
+      <Route path="/warranty" component={Warranty}/>
+      <Route path="/warrantyFAQ" component={WarrantyFAQ}/>
+      <Route path="/service" component={MainService}/>
+      <Route path="/addService" component={AddService}/>
 
       <Route path="/createCurfew" component={CurfewPanel}/>
       <Route path="/reviewCurfew" component={CurfewReview}/>
-      <Route path="/authorize" component={PinPanel}/>     
+      <Route path="/authorize" component={PinPanel}/> 
+      <Route path="/legalDisclaimer" component={LegalDisclaimer}/>    
     </div>
   </Router>
 )
