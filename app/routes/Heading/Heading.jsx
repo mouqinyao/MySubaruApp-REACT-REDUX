@@ -35,7 +35,7 @@ class Heading extends Component {
 
   componentWillMount() {    
     const path = this.props.history.location.pathname;   
-    path == '/home' ? this.setState({goBackIsActive: false}) : this.setState({goBackIsActive: true});
+    path == '/home' || path == '/' ? this.setState({goBackIsActive: false}) : this.setState({goBackIsActive: true});
   }
 
   render() {  

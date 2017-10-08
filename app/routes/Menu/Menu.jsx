@@ -7,6 +7,7 @@ class Menu extends Component {
     constructor(props) {
         super(props);
 
+        this.goToHome = this.goToHome.bind(this);
         this.goToRemoteServiceLanding = this.goToRemoteServiceLanding.bind(this);
         this.goToRoadsideAssistance = this.goToRoadsideAssistance.bind(this);
         this.goToService = this.goToService.bind(this);
@@ -14,6 +15,11 @@ class Menu extends Component {
         this.goToWarranty = this.goToWarranty.bind(this);
         this.goToSupportLanding = this.goToSupportLanding.bind(this);
         this.goToLegalDisclaimer = this.goToLegalDisclaimer.bind(this);
+    }
+
+    goToHome(e) {
+        e.preventDefault();
+        this.props.history.push('/home');
     }
 
     goToRemoteServiceLanding(e) {
@@ -55,7 +61,7 @@ class Menu extends Component {
     return (
     	<div className="menu">
     		<ul className="menu__list">
-    			<li>Home</li>
+    			<li onClick={this.goToHome}>Home</li>
     			<li onClick={this.goToRemoteServiceLanding}>SUBARU STARLINK&trade; Services</li>
     			<li onClick={this.goToRoadsideAssistance}>Roadside Assistance</li>
     			<li onClick={this.goToService}>Service</li>

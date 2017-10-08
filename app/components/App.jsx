@@ -39,6 +39,8 @@ import LegalDisclaimer from '~/routes/Panel/LegalDisclaimer';
 const App = () => ( 
   <Router>
     <div>
+      <Route path="/" exact component={Home}/>
+
       <Route path="/home" component={Home}/>
       <Route path="/vehicleInformation" component={VehicleInformation}/>
       <Route path="/remoteServiceLanding" component={RemoteServiceLanding}/>
