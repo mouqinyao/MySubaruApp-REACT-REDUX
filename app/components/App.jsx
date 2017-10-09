@@ -37,7 +37,7 @@ import CurfewPanel from '~/routes/Curfew/CurfewPanel';
 import CurfewReview from '~/routes/Curfew/CurfewReview';
 
 import PinPanel from '~/routes/Panel/PinPanel';
-import LegalDisclaimer from '~/routes/Panel/LegalDisclaimer';
+import LegalDisclaimer from '~/routes/Support/LegalDisclaimer';
 
 const App = () => ( 
   <Router>

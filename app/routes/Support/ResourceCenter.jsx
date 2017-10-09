@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Heading from '~/routes/Heading/Heading';
-import VehicleBar from '~/routes/Vehicle/VehicleBar';
+import Heading from '~/components/Heading';
+import VehicleBar from '~/components/VehicleBar';
 
 class ResourceCenter extends Component {
 

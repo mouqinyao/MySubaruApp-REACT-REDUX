@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 
-import VehicleBar from '~/routes/Vehicle/VehicleBar';
-import Heading from '~/routes/Heading/Heading';
-import Menu from '~/routes/Menu/Menu';
+import VehicleBar from '~/components/VehicleBar';
+import Heading from '~/components/Heading';
+import Menu from '~/components/Menu';
 import ProcessingBar from '~/components/ProcessingBar';
 
 class Home extends Component {

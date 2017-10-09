@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import Accordion from '~/components/Accordion';
-import Heading from '~/routes/Heading/Heading';
-import VehicleBar from '~/routes/Vehicle/VehicleBar';
+import Heading from '~/components/Heading';
+import VehicleBar from '~/components/VehicleBar';
 
 class TipFAQ extends Component {
 
