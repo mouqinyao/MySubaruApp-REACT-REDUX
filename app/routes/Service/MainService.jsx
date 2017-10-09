@@ -8,11 +8,17 @@ class MainService extends Component {
   constructor(props) {
     super(props);
     this.findRetailer = this.findRetailer.bind(this);
+    this.addService = this.addService.bind(this);
   }
 
   findRetailer(e) {
     e.preventDefault();
     this.props.history.push('/findRetailer');
+  }
+
+  addService(e) {
+    e.preventDefault();
+    this.props.history.push('/addService');
   }
 
   render() {
@@ -33,11 +39,11 @@ class MainService extends Component {
                   <div className="btn btn-info col-2">Service History</div>
                   <div className="btn btn-info col-2">Maintenance Schedule</div>
                 </div>
-                <div className="btn__group">
+                <div className="btn__group btn__group--no-top-spacing">
                   <div className="btn btn-info col-2">Call</div>
-                  <div className="btn btn-info col-2">Record a Service</div>
+                  <div className="btn btn-info col-2" onClick={this.addService}>Record a Service</div>
                 </div>
-                <div className="btn btn-primary">Select a Different Retailer</div>  
+                <div className="btn btn-info" onClick={this.findRetailer}>Select a Different Retailer</div>  
               </div>
             </div>            
           </div>

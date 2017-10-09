@@ -3,6 +3,7 @@ import React, { Component, PropTypes } from 'react';
 import VehicleBar from '~/routes/Vehicle/VehicleBar';
 import Heading from '~/routes/Heading/Heading';
 import Menu from '~/routes/Menu/Menu';
+import ProcessingBar from '~/components/ProcessingBar';
 
 class Home extends Component {
 
@@ -13,6 +14,7 @@ class Home extends Component {
 	    this.goToDriverAlertLanding = this.goToDriverAlertLanding.bind(this);
 		this.goToMessageLanding = this.goToMessageLanding.bind(this);
 		this.goToSupportLanding = this.goToSupportLanding.bind(this);
+		this.scheduleService = this.scheduleService.bind(this);
 	}
 
 	goToRemoteServiceLanding(e) {
@@ -33,6 +35,11 @@ class Home extends Component {
 	goToSupportLanding(e) {
 	    e.preventDefault();
 	    this.props.history.push('/supportLanding');
+	}
+
+	scheduleService(e) {
+		e.preventDefault();
+	    this.props.history.push('/service');
 	}
 
 	render() {
@@ -80,7 +87,7 @@ class Home extends Component {
 			          <img className="blade__icon" src="/app/images/icon-driverAlert.svg"/>Driver Alerts Settings
 			        </div>
 			    </div>
-			    <div className="blade">         
+			    <div className="blade" onClick={this.scheduleService}>         
 			        <div className="blade__heading">
 			          <img className="blade__icon" src="/app/images/icon-circleService.svg"/>
 			          <div>
@@ -101,6 +108,7 @@ class Home extends Component {
 			        </div>
 			    </div>
 		    </div>
+		    <ProcessingBar/>
 		  </div>
 		);
 	}

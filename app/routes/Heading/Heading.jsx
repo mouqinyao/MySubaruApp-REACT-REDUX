@@ -38,19 +38,34 @@ class Heading extends Component {
     path == '/home' || path == '/' ? this.setState({goBackIsActive: false}) : this.setState({goBackIsActive: true});
   }
 
-  render() {  
+  render() {
+    const isMenuActive = this.state.isActive;
+
     return (
       <div>
       	<header>
   	      <img src="/app/images/header.svg" className="header__img" onClick={this.backToHome}/>
   	      <img src="/app/images/icon-back.svg" className={this.state.goBackIsActive ? 'header__icon--active' : 'header__icon--inactive'} onClick={this.goBack}/>
-          <div className="header__menu" onClick={this.toggleMenu}>
-  	      	<div className="header__toggle">
-  	      		<span className="header__toggle-line"></span>
-  	      		<span className="header__toggle-line"></span>
-  	      		<span className="header__toggle-line"></span>
-  	      	</div>
-  	      	<span className="header__menu-text">MENU</span>
+          <div className="header__menu" onClick={this.toggleMenu}> 	      	
+            {isMenuActive ? (
+              <div>
+                <div className="header__toggle">
+                  <span className="header__toggle-close"></span>
+                  <span className="header__toggle-close"></span>
+                  <span className="header__toggle-close"></span>
+                </div>
+                <span className="header__menu-text">CLOSE</span>
+              </div>
+              ) : (
+              <div>
+                <div className="header__toggle">
+                  <span className="header__toggle-line"></span>
+                  <span className="header__toggle-line"></span>
+                  <span className="header__toggle-line"></span>
+                </div>
+                <span className="header__menu-text">MENU</span>
+              </div>
+            )}
   	      </div>
   	    </header>
         <div className={this.state.isActive ? 'menu--active': 'menu--inactive'}>

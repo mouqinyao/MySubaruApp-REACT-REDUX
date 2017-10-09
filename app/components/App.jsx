@@ -27,9 +27,12 @@ import StarlinkCustomerCare from '~/routes/Support/StarlinkCustomerCare';
 import CustomerCare from '~/routes/Support/CustomerCare';
 import Warranty from '~/routes/Support/Warranty';
 import WarrantyFAQ from '~/routes/Support/WarrantyFAQ';
+import ResourceCenter from '~/routes/Support/ResourceCenter';
+import TipFAQ from '~/routes/Support/TipFAQ';
 import MainService from '~/routes/Service/MainService';
 import AddService from '~/routes/Service/AddService';
 
+import SpeedAlert from '~/routes/SpeedAlert/SpeedAlert';
 import CurfewPanel from '~/routes/Curfew/CurfewPanel';
 import CurfewReview from '~/routes/Curfew/CurfewReview';
 
@@ -60,9 +63,12 @@ const App = () => (
       <Route path="/customerCare" component={CustomerCare}/>
       <Route path="/warranty" component={Warranty}/>
       <Route path="/warrantyFAQ" component={WarrantyFAQ}/>
+      <Route path="/resourceCenter" component={ResourceCenter}/>
+      <Route path="/tipFAQ" component={TipFAQ}/>
       <Route path="/service" component={MainService}/>
       <Route path="/addService" component={AddService}/>
 
+      <Route path="/speedAlert" component={SpeedAlert}/>
       <Route path="/createCurfew" component={CurfewPanel}/>
       <Route path="/reviewCurfew" component={CurfewReview}/>
       <Route path="/authorize" component={PinPanel}/> 

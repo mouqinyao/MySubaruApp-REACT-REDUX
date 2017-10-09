@@ -36,7 +36,7 @@ class AddService extends Component {
 			            </div>
 			            <div className="form__block form__block--column">
 			                <label className="form__label form__label--blue"><span className="red">*</span>Notes</label>
-			                <input type="textarea" className="form__input" defaultValue=""/>
+			                <textarea className="form__textarea" placeholder="notes"></textarea>
 			            </div>
 			    	</div>
 			    	<div className="btn__group">

@@ -14,6 +14,7 @@ class Menu extends Component {
         this.goToProfile = this.goToProfile.bind(this);
         this.goToWarranty = this.goToWarranty.bind(this);
         this.goToSupportLanding = this.goToSupportLanding.bind(this);
+        this.goToResourceCenter = this.goToResourceCenter.bind(this);
         this.goToLegalDisclaimer = this.goToLegalDisclaimer.bind(this);
     }
 
@@ -52,6 +53,11 @@ class Menu extends Component {
         this.props.history.push('/supportLanding');
     }
 
+    goToResourceCenter(e) {
+        e.preventDefault();
+        this.props.history.push('/resourceCenter');
+    }
+
     goToLegalDisclaimer(e) {
         e.preventDefault();
         this.props.history.push('/legalDisclaimer');
@@ -68,8 +74,8 @@ class Menu extends Component {
     			<li onClick={this.goToProfile}>My Profile</li>
     			<li>My Vehicles</li>
     			<li onClick={this.goToWarranty}>Warranty &amp; Extended Services</li>
-    			<li>How To and Info</li>
     			<li onClick={this.goToSupportLanding}>Support</li>
+                <li onClick={this.goToResourceCenter}>Resouce Center</li>    			
     			<li onClick={this.goToLegalDisclaimer}>Legal Disclaimers</li>
     			<li>Log Out</li>
     		</ul>

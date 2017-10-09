@@ -56,6 +56,13 @@
 		background-color: #f3f3f2;
 	}
 
+	.accordion__content--is-active {
+		display: block;
+		padding: 10px;
+		font-weight: lighter;
+		background-color: #f3f3f2;
+	}
+
 		.accordion__content-title {
 
 		}

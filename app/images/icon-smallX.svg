@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="X_SM_Close" data-name="X SM Close" class="cls-1" d="M590.328,447.991L587,444.664l-3.328,3.327-1.663-1.663L585.336,443l-3.327-3.328,1.663-1.664L587,441.336l3.328-3.328,1.663,1.664L588.664,443l3.327,3.328Z" transform="translate(-582 -438)"/>
+</svg>
