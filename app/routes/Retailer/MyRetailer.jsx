@@ -33,9 +33,18 @@ class MyRetailer extends Component {
                 </div>
                 <div className="btn btn-primary">Schedule a Service Appointment</div>
                 <div className="retailer__action">
-                  <div className="flex flex--vertical-center retailer__action-box retailer__action-box--right-spacing">Retailer Website</div>
-                  <div className="flex flex--vertical-center retailer__action-box retailer__action-box--right-spacing">Get Directions</div>
-                  <div className="flex flex--vertical-center retailer__action-box" onClick={this.findRetailer}>Find a Retailer</div>
+                  <div className="retailer__action-box">
+                    <img src="/app/images/icon-web.svg" className="retailer__action-icon"/>
+                    <div className="retailer__action-text">Retailer<br/>Website</div>
+                  </div>
+                  <div className="retailer__action-box">
+                    <img src="/app/images/icon-map.svg" className="retailer__action-icon"/>
+                    <div className="retailer__action-text">Get<br/>Directions</div>
+                  </div>
+                  <div className="retailer__action-box" onClick={this.findRetailer}>
+                    <img src="/app/images/icon-locate.svg" className="retailer__action-icon"/>
+                    <div className="retailer__action-text">Find a<br/>Retailer</div>
+                  </div>
                 </div>
               </div>
             </div>            

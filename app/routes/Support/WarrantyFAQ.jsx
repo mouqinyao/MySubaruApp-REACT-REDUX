@@ -20,7 +20,13 @@ class WarrantyFAQ extends Component {
             <div className="page-title">Warranty FAQs</div>
             <div className="accordion">
               <div className="accordion__list">
-                <div className="accordion__title">What's Covered?</div>
+                <div className="accordion__title">
+                  <div className="accordion__title-text">What's Covered?</div>
+                  <div className="accordion__arrow">
+                    <span className="accordion__arrow-line"></span>
+                    <span className="accordion__arrow-line accordion__arrow-line--right"></span>
+                  </div>
+                </div>
                 <div className="accordion__content">
                   <div className="accordion__content-title">What Is Covered</div>
                   <p className="accordion__content-description">Subaru's basic warranty covers any repairs needed to correct defects in material or workmanship reported during the applicable warranty period and which occur under normal use:</p>
@@ -31,14 +37,26 @@ class WarrantyFAQ extends Component {
                 </div>
               </div>
               <div className="accordion__list">
-                <div className="accordion__title">What does the warranty period begin?</div>
+                <div className="accordion__title">
+                  <div className="accordion__title-text">What does the warranty period begin?</div>
+                  <div className="accordion__arrow">
+                    <span className="accordion__arrow-line"></span>
+                    <span className="accordion__arrow-line accordion__arrow-line--right"></span>
+                  </div>
+                </div>
                 <div className="accordion__content">
                   <div className="accordion__content-title">Warranty Period</div>
                   <p className="accordion__content-description">Warranty coverage begins on the date the car is delivered to the first retail purchaser. If the car was used as a demonstrator or company vehicle before being sold at retail, warranty coverage begins on the date the car was first placed in such service.</p>
                 </div>
               </div>
               <div className="accordion__list">
-                <div className="accordion__title">When These Warranties Apply</div>
+                <div className="accordion__title">
+                  <div className="accordion__title-text">When These Warranties Apply</div>
+                  <div className="accordion__arrow">
+                    <span className="accordion__arrow-line"></span>
+                    <span className="accordion__arrow-line accordion__arrow-line--right"></span>
+                  </div>
+                </div>
                 <div className="accordion__content">
                   <div className="accordion__content-title">What Is Covered</div>
                   <p className="accordion__content-description">These warranties are made by Subaru of America, Inc. (except in Hawaii) and apply only if the car was imported or distributed by Subaru of America, Inc. and sold to the first retail purchaser by an Authorized Subaru Dealer in the United States.</p>

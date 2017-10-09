@@ -39,7 +39,7 @@ class Menu extends Component {
 
     goToProfile(e) {
         e.preventDefault();
-        this.props.history.push('/contactInformation');
+        this.props.history.push('/myProfileLanding');
     }
 
     goToWarranty(e) {

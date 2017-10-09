@@ -1,5 +1,5 @@
 .home-hero {
-	position: relative;
+    position: relative;
     width: 100%;
     height: 230px;
     background-position: center center;
@@ -10,33 +10,33 @@
 }
 
 .blade {
-	margin-bottom: 1px;
-	padding: 0;
+    margin-bottom: 1px;
+    padding: 0;
 }
 
-	    .blade__heading {
-	    	position: relative;
-	        display: -webkit-box;
-	        display: -ms-flexbox;
-	        display: flex;
-	        z-index: 10;
-	        padding: 10px;
-	        height: 100%;
-	        min-height: 80px;
-	        font-size: 20px;
-	        font-weight: bold;
-	        color: #000000;
-	        background-color: #ffffff;
-	        -webkit-box-align: center;
-	            -ms-flex-align: center;
-	                align-items: center;
-	        -webkit-transition: all .3s ease-in-out;
-	        transition: all .3s ease-in-out;
-	        cursor: pointer;
-	    }
+        .blade__heading {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            z-index: 10;
+            padding: 10px;
+            height: 100%;
+            min-height: 80px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            background-color: #ffffff;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+        }
 
-	    .blade__icon {
-	    	position: relative;
+        .blade__icon {
+            position: relative;
             width: 50px;
             height: 50px;
             padding-right: 20px;
@@ -45,28 +45,28 @@
             -webkit-box-flex: 0;
                 -ms-flex: 0 0 50px;
                     flex: 0 0 50px;
-	    }
+        }
 
         .blade__icon--small {
             width: 30px;
             height: 30px;
         }
 
-	    .blade__sub-heading {
-			display: block;
-		    margin-bottom: 5px;
-		    font-size: 16px;
-		    font-weight: bold;
-	    }
+        .blade__sub-heading {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
 
-	    .blade__heading-description {
-			margin: 0;
-		    font-size: 14px;
-		    font-weight: 100;
-		    line-height: 14px;
-	    }
+        .blade__heading-description {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 100;
+            line-height: 14px;
+        }
 
-	    .blade__heading-dots {
+        .blade__heading-dots {
             position: absolute;
             top: 50%;
             right: 10px;

@@ -22,7 +22,10 @@ class FindRetailer extends Component {
               <div className="retailer">
                 <div className="retailer__title">Find a Retailer</div>
                 <p className="retailer__description">Finding a Subaru retailer is quick and easy. Simply enter a zip code and we'll provide you with a list of authorized retailers near you.</p>
-                <input type="text" className="retailer__search" maxLength="5" placeholder="Enter Zip code"/>
+                <div className="retailer__search-container">
+                  <input type="text" className="retailer__search" maxLength="5" placeholder="Enter Zip code"/>
+                  <span className="retailer__search-icon"></span>
+                </div>
                 <div className="retailer__results-list">
                   <div className="flex retailer__results-list-item">
                     <div className="flex__item--fill">

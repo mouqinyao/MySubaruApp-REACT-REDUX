@@ -13,7 +13,7 @@ class MyProfileLanding extends Component {
 
   viewContactInformation(e) {
   	e.preventDefault();
-  	
+  	this.props.history.push('/contactInformation');
   }
 
   viewMyRetailer(e) {
@@ -31,12 +31,12 @@ class MyProfileLanding extends Component {
 			    	<div className="page-title">Support</div>
 			    	<div className="landing__btn-container" onClick={this.viewContactInformation}>
 			    		<div className="landing__btn">
-			    			Contact Information
+			    			<img src="/app/images/icon-contactInformation.svg" className="landing__btn-icon"/>Contact Information
 			    		</div>
 			    	</div>
 			    	<div className="landing__btn-container" onClick={this.viewMyRetailer}>
 			    		<div className="landing__btn">
-			    			My Retailer
+			    			<img src="/app/images/icon-myRetailer.svg" className="landing__btn-icon"/>My Retailer
 			    		</div>
 			    	</div>
 			    </div>
