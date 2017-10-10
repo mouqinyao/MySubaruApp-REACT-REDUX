@@ -36,7 +36,7 @@ import SpeedAlert from '~/routes/SpeedAlert/SpeedAlert';
 import CurfewPanel from '~/routes/Curfew/CurfewPanel';
 import CurfewReview from '~/routes/Curfew/CurfewReview';
 
-import PinPanel from '~/routes/Panel/PinPanel';
+import PinPanel from '~/components/PinPanel';
 import LegalDisclaimer from '~/routes/Support/LegalDisclaimer';
 
 const App = () => ( 

@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { BrowserRouter as Router, Route, withRouter, Link } from 'react-router-dom';
 
-import Menu from '~/routes/Menu/Menu';
+import Menu from '~/components/Menu';
 
 class Heading extends Component {
 
