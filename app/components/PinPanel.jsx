@@ -4,7 +4,23 @@ class PinPanel extends Component {
 
   constructor(props) {
     super(props);
+    
+    this.addPin = this.addPin.bind(this);
+  }
 
+  addPin(e) {
+    e.preventDefault();
+    console.log(e.target.value)
+  }
+
+  deletePin(e) {
+    e.preventDefault();
+    
+  }
+
+  clearPin(e) {
+    e.preventDefault();
+    
   }
 
   render() {   
@@ -16,24 +32,24 @@ class PinPanel extends Component {
                     <h2 className="panel__content-title panel__content-title--with-border">PIN Required</h2>                    
                     <p className="panel__content-sub-title">Enter PIN</p>            
                     <div className="panel__content-processing-dots processingDots">
-                        <span className="panel__content-processing-dot dot"></span>
-                        <span className="panel__content-processing-dot dot"></span>
-                        <span className="panel__content-processing-dot dot"></span>
-                        <span className="panel__content-processing-dot dot"></span>
+                        <span className="panel__content-processing-dot"></span>
+                        <span className="panel__content-processing-dot"></span>
+                        <span className="panel__content-processing-dot"></span>
+                        <span className="panel__content-processing-dot"></span>
                     </div>                    
-                    <div className="panel__content-keyboard" id="pinPad">
-                        <span className="panel__content-keyboard-key key" >1</span>
-                        <span className="panel__content-keyboard-key key" >2</span>
-                        <span className="panel__content-keyboard-key key" >3</span>                    
-                        <span className="panel__content-keyboard-key key" >4</span>
-                        <span className="panel__content-keyboard-key key" >5</span>
-                        <span className="panel__content-keyboard-key key" >6</span>                   
-                        <span className="panel__content-keyboard-key key" >7</span>
-                        <span className="panel__content-keyboard-key key" >8</span>
-                        <span className="panel__content-keyboard-key key" >9</span>                    
-                        <span className="panel__content-keyboard-key panel__content-keyboard-key--clear key" id="pinClear" >CLEAR</span>
-                        <span className="panel__content-keyboard-key key" >0</span>
-                        <span className="panel__content-keyboard-key panel__content-keyboard-key--backspace key" id="pinBackspace" ></span>
+                    <div className="panel__content-keyboard">
+                        <input className="panel__content-keyboard-key" onClick={this.addPin} defaultValue="1" readOnly/>
+                        <input className="panel__content-keyboard-key" onClick={this.addPin} defaultValue="2" readOnly/>
+                        <input className="panel__content-keyboard-key" onClick={this.addPin} defaultValue="3" readOnly/>                   
+                        <input className="panel__content-keyboard-key" onClick={this.addPin} defaultValue="4" readOnly/>
+                        <input className="panel__content-keyboard-key" onClick={this.addPin} defaultValue="5" readOnly/>
+                        <input className="panel__content-keyboard-key" onClick={this.addPin} defaultValue="6" readOnly/>                   
+                        <input className="panel__content-keyboard-key" onClick={this.addPin} defaultValue="7" readOnly/>
+                        <input className="panel__content-keyboard-key" onClick={this.addPin} defaultValue="8" readOnly/>
+                        <input className="panel__content-keyboard-key" onClick={this.addPin} defaultValue="9" readOnly/>                   
+                        <span className="panel__content-keyboard-key panel__content-keyboard-key--clear" onClick={this.clearPin}>CLEAR</span>
+                        <input className="panel__content-keyboard-key" onClick={this.addPin} defaultValue="0" readOnly/>
+                        <span className="panel__content-keyboard-key panel__content-keyboard-key--backspace" onClick={this.deletePin}></span>
                     </div>           
                 </div>
             </div>

@@ -8,6 +8,12 @@ class RemoteServiceLanding extends Component {
   constructor(props) {
     super(props);
 
+    this.lockDoorsAuthorization = this.lockDoorsAuthorization.bind(this);
+  }
+
+  lockDoorsAuthorization(e) {
+  	e.preventDefault();
+  	this.props.history.push('/authorize');
   }
 
   render() {   
@@ -29,7 +35,7 @@ class RemoteServiceLanding extends Component {
 			    		</div>
 			    	</div>
 			    	<div className="landing__btn-container">
-			    		<div className="landing__btn">
+			    		<div className="landing__btn" onClick={this.lockDoorsAuthorization}>
 			    			<img src="/app/images/icon-lock-door.svg" className="landing__btn-icon"/>Lock Doors
 			    		</div>
 			    	</div>
